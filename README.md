@@ -1,6 +1,6 @@
 # Fortenet
 
-Simple Ruby parser for Forte.net REST API (work in progress)
+Simple Ruby wrapper for Forte.net REST API (work in progress)
 
 ## Contributing
 
