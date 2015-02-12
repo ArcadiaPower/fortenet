@@ -45,6 +45,11 @@ module Fortenet
       options[:headers]['X-Forte-Auth-Account-Id'] = "act_#{Fortenet.account_id}"
       options[:headers]["Content-Type"] = "application/json"
       options[:headers]['Authorization'] = "Basic #{client_id_and_secret}"
+
+      options[:http_proxyaddr] = Fortenet.proxy_host if Fortenet.proxy_host.present?
+      options[:http_proxyport] = Fortenet.proxy_port if Fortenet.proxy_port.present?
+      options[:http_proxyuser] = Fortenet.proxy_user if Fortenet.proxy_user.present?
+      options[:http_proxypass] = Fortenet.proxy_password if Fortenet.proxy_user.present?
     end
 
   end
