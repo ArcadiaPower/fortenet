@@ -1,9 +1,9 @@
 module Fortenet
   class Client < Fortenet::Request
-
-    def initialize(account_id = Fortenet.account_id, location_id = Fortenet.location_id, attrs = {})
-      @location_id = location_id
-      @account_id = account_id
+    def initialize(options = {})
+      @location_id = options[:location_id] || Fortenet.location_id
+      @account_id = options[:account_id] || Fortenet.account_id
+      super(options)
     end
 
     def base_path
@@ -31,6 +31,5 @@ module Fortenet
     def data_to_json(data)
       data.is_a?(Hash) ? data.to_json : data
     end
-
   end
 end
