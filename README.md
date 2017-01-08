@@ -32,10 +32,10 @@ Create an initializer
     config.debug_output = $stdout
 
     # optionally configure proxy
-    config.proxy_host = ENV['FORTE_']
-    config.proxy_port = ENV['FORTE_ENDPOINT']
-    config.proxy_user =ENV['FORTE_ENDPOINT']
-    config.proxy_password = ENV['FORTE_ENDPOINT']
+    config.proxy_host = ENV['FORTE_PROXY_HOST']
+    config.proxy_port = ENV['FORTE_PROXY_PORT']
+    config.proxy_user =ENV['FORTE_PROXY_USER']
+    config.proxy_password = ENV['FORTE_PROXY_PASSWORD']
   end
 ```
 
