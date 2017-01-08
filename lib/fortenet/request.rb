@@ -42,7 +42,7 @@ module Fortenet
       client_id_and_secret = Base64.strict_encode64("#{Fortenet.api_login_id}:#{Fortenet.secure_transaction_key}")
       #options[:ssl_version] = :TLSv1
       options[:headers] ||= {}
-      options[:headers]['X-Forte-Auth-Account-Id'] = "act_#{Fortenet.account_id}"
+      options[:headers]['X-Forte-Auth-Organization-Id'] = "org_#{Fortenet.account_id}"
       options[:headers]["Content-Type"] = "application/json"
       options[:headers]['Authorization'] = "Basic #{client_id_and_secret}"
 

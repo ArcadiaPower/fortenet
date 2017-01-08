@@ -5,7 +5,7 @@ module Fortenet
   mattr_accessor :api_login_id, :secure_transaction_key, :account_id, :location_id, :proxy_host, :proxy_user, :proxy_password
 
   mattr_accessor :endpoint
-  @@endpoint = 'https://sandbox.forte.net/api/v1'
+  @@endpoint = 'https://sandbox.forte.net/api/v3'
 
   mattr_accessor :debug
   @@debug = true

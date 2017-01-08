@@ -7,7 +7,7 @@ module Fortenet
     end
 
     def base_path
-      "/accounts/act_#{@account_id}/locations/loc_#{@location_id}/"
+      "/organizations/org_#{@account_id}/locations/loc_#{@location_id}/"
     end
 
     def find(relative_path, data = nil)
@@ -19,7 +19,7 @@ module Fortenet
     end
 
     def update(relative_path, data = nil)
-      self.update(base_path+relative_path, body: data_to_json(data))
+      self.put(base_path+relative_path, body: data_to_json(data))
     end
 
     def destroy(relative_path)
