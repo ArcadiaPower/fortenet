@@ -4,7 +4,6 @@ require 'json'
 module Fortenet
   class Request
     include HTTParty
-    debug_output Fortenet.debug_output if Fortenet.debug
     format :json
     headers 'Accept' => 'application/json'
 

@@ -8,7 +8,7 @@ Learn about the Forte Payments REST API at https://www.forte.net/devdocs/api_res
 Add this line to your application's Gemfile:
 ```ruby
   # in your Gemfile
-  gem 'fortenet', '3.0.1', git: 'https://github.com/iiwo/fortenet'
+  gem 'fortenet'
 
   # then...
   bundle install
@@ -67,11 +67,3 @@ client.create('transactions', request)
 # sample PUT request
 client.update('transactions', request)
 ```
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/fortenet/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
