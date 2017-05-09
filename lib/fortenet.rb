@@ -1,4 +1,5 @@
 require 'httparty'
+require 'json'
 require 'fortenet/version'
 
 module Fortenet
@@ -29,9 +30,9 @@ module Fortenet
 
 end
 
+require 'fortenet/options'
 require 'fortenet/request'
 require 'fortenet/client'
-
 
 # default starting point
 Fortenet.debug_output = $stdout
