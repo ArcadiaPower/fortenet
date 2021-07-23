@@ -1,4 +1,4 @@
-DEPRECATIO NOTICE: The only use of this gem was removed in https://github.com/ArcadiaPower/arcadia-power/pull/9715 and it is now deprecated.
+DEPRECATION NOTICE: The only use of this gem was removed in https://github.com/ArcadiaPower/arcadia-power/pull/9715 and it is now deprecated.
 
 # Fortenet
 
